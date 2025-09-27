@@ -5,59 +5,64 @@ This project analyzes SkyFleet’s aircraft fleet using SQL and Tableau to suppo
 
 ## Objective
 
-* Analyze fleet composition and operational status.
+The goal of this project is to use SQL-driven analytics to gain deeper insights into SkyFleet’s aircraft dataset. 
+The analysis aims to:
 
-* Identify aircraft models with higher maintenance and operational risks.
+* Understand fleet composition and efficiency.
 
-* Forecast spare part demand based on aircraft age, engine type, and efficiency.
+* Identify aircraft models with higher operational and maintenance risks.
 
-* Support maintenance planning and inventory allocation to reduce operational costs.
+* Forecast spare parts demand based on aircraft age, engine type, and efficiency.
 
- ## Methodology
-1. Exploratory Data Analysis (EDA)
+* Provide actionable insights to support maintenance planning, fleet modernization, and inventory allocation.
 
-* Performed SQL queries to analyze:
+## Dataset
 
-* Fleet Status: Active vs Retired aircraft
+**Table Name:** `aircraft_fleet`
 
-* Fleet Age Distribution: Average, youngest, and oldest aircraft per model
+**Key Fields:**
 
-* Seating Capacity: Average, minimum, maximum per aircraft model
+- `Airline`
+- `Aircraft_Model`
+- `Year_Built`
+- `Status` (Active / Retired)
+- `Seats`
+- `Fuel_Burn_L_hr`
+- `Range_km`
+- `Engine_Type`
 
-* Fuel Efficiency: Fuel burn per seat
 
-* Engine Type Breakdown: Count, average age, and fuel consumption
+## Exploratory Data Analysis (EDA)
 
-* Range Efficiency: Km per litre burned
+This project provides a comprehensive exploratory data analysis on aircraft fleet data, covering various aspects of fleet status, performance, and business applications.
 
-2. Business Analysis
+### Fleet Overview
 
-* Age-based Aircraft Classification: New (0–9 yrs), Mid-life (10–20 yrs), Old (>20 yrs)
+- **Fleet Status:** Counts of active versus retired aircraft.
+- **Fleet Age Distribution:** Average, youngest, and oldest aircraft ages broken down by airline and model.
+- **Seating Capacity:** Average, minimum, and maximum seating capacity per aircraft model.
+- **Fuel Efficiency:** Fuel burn per seat across active aircraft models.
+- **Engine Type Breakdown:** Counts, average age, and average fuel burn by engine type.
+- **Range Efficiency:** Range per litre of fuel burned as a proxy for operational efficiency.
 
-* Spare Part Demand Forecast: High/Medium/Low demand proxy based on fleet age and fuel efficiency
+### Business Applications
 
-* Fleet Standardization Index: Unique models vs total aircraft to assess maintenance complexity
+- **Age Group Classification:** Categorization of aircraft into age groups:  
+  - New (0–9 years)  
+  - Mid-life (10–20 years)  
+  - Old (>20 years)
+- **Spare Parts Demand Forecast:** Classification of aircraft models into high, medium, and low spare-parts demand categories.
+- **Fleet Standardization Index:** Measurement of fleet complexity by airline, based on the number of unique models relative to total aircraft.
+- **Retirement Forecast:** Identification of aircraft nearing or due for retirement (20–25+ years).
+- **Spare Parts by Age Group:** Linking aircraft age brackets with inventory planning for spare parts.
+- **Engine Type Analysis:** Identification of the most common engine types within the active fleet.
+- **Fuel Inefficiency & Maintenance Demand:** Highlighting aircraft with high fuel burn that require closer maintenance monitoring.
+- **Transitioning Models:** Identification of aircraft models that have both active and retired units.
+- **Engine Reliability Risks:** Classification of engine risk levels (Low, Medium, High) based on aircraft age.
 
-* Aircraft Retirement Forecast: Immediate, near-term, and healthy active aircraft
+## Key Takeaways
 
-* Engine Type & Spare Part Planning: Focused on dominant engine types for inventory planning
+- SQL-based analytics can uncover hidden inefficiencies in fleet management.
+- The project highlights which models to retire, which to maintain, and where to allocate spare part budgets.
+- Results directly support operational cost reduction, safety improvement, and sustainability goals.
 
-* Fuel Inefficiency Analysis: Identify models requiring frequent maintenance
-
-## Tools & Technologies
-
-* SQL: Data querying and aggregation
-
-* Tableau: Dashboard creation and data visualization
-
-* Excel / CSV: Dataset exploration
-
-## Business Value
-
-* Optimized spare part inventory based on fleet age and efficiency.
-
-* Supported cost reduction through fleet standardization insights.
-
-* Enabled data-driven fleet renewal and maintenance planning.
-
-* Identified high-risk aircraft models for proactive maintenance.
