@@ -19,7 +19,7 @@ The project includes:
 - High-Risk Aircraft: **18**
 
 ### Dashboard Visuals
-![Fleet Performance Dashboard](path/to/your/image.png)
+![Fleet Performance Dashboard](https://github.com/monika-git27/Fleet-Analytics-Maintenance-Planning/blob/main/Dashboard.png)
 - Fleet Count by Aircraft Model
 - Fuel Efficiency Ranking
 - Fleet Status (Active, Retired, Under Maintenance)
@@ -93,7 +93,7 @@ Aircraft engines are classified into **Low**, **Medium**, or **High** reliabilit
 ## Skills and Tools Used
 
 - SQL (data validation, EDA, analytical modeling)
-- Power BI (KPI visualization, trend dashboards, slicers, DAX expressions)
+- Power BI, Tableau (KPI visualization, trend dashboards, slicers, DAX expressions)
 - Data cleaning and preprocessing
 - Aviation fleet analytics and domain KPIs
 - Predictive categorization for maintenance and risk
